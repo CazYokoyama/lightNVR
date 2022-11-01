@@ -18,6 +18,7 @@ class CommandHandler:
     #first set up lvcreate args
     arglist = list()
     arglist.append(LVCREATE_BIN_PATH)
+    arglist.append("-qq")
     arglist.append("-n")
     lvname = cmd_args_dict[NEW_LV_NAME_ARG]
     arglist.append(lvname)
